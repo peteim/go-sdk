@@ -930,26 +930,8 @@ func (hc *channelSession) processMessages() {
 				delete(hc.asyncHandlers, key)
 			}
 			hc.asyncMu.Unlock()
-			// re-connect network
-			for {
-				con, err := tls.Dial("tcp", hc.endpoint, hc.tlsConfig)
-				if err != nil {
-					continue
-				}
-				hc.c = con
-				hc.closed = make(chan interface{})
-				hc.closeOnce = sync.Once{}
-				hc.nodeInfo.Protocol = 1
-				go hc.processMessages()
-				if err = hc.handshakeChannel(); err != nil {
-					fmt.Printf("handshake channel protocol failed, use default protocol version")
-				}
-				err = hc.sendSubscribedTopics() // re-subscribe topic
-				if err != nil {
-					log.Printf("re-subscriber topic failed")
-				}
-				return
-			}
+
+			return
 		default:
 			receiveBuf := make([]byte, 4096)
 			b, err := hc.c.Read(receiveBuf)
