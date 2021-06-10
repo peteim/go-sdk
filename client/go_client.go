@@ -25,14 +25,14 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/FISCO-BCOS/go-sdk/abi/bind"
-	"github.com/FISCO-BCOS/go-sdk/conf"
-	"github.com/FISCO-BCOS/go-sdk/conn"
-	"github.com/FISCO-BCOS/go-sdk/core/types"
 	"github.com/ethereum/go-ethereum"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/common/hexutil"
 	"github.com/ethereum/go-ethereum/crypto"
+	"github.com/peteim/go-sdk/abi/bind"
+	"github.com/peteim/go-sdk/conf"
+	"github.com/peteim/go-sdk/conn"
+	"github.com/peteim/go-sdk/core/types"
 )
 
 // Client defines typed wrappers for the Ethereum RPC API.

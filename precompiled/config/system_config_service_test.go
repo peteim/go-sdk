@@ -5,8 +5,8 @@ import (
 	"encoding/hex"
 	"testing"
 
-	"github.com/FISCO-BCOS/go-sdk/client"
-	"github.com/FISCO-BCOS/go-sdk/conf"
+	"github.com/peteim/go-sdk/client"
+	"github.com/peteim/go-sdk/conf"
 )
 
 func testSetValueByKey(t *testing.T, key string, value string) {

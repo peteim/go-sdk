@@ -9,11 +9,11 @@ import (
 	"math/big"
 	"sync/atomic"
 
-	"github.com/FISCO-BCOS/go-sdk/smcrypto/sm3"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/common/hexutil"
 	"github.com/ethereum/go-ethereum/crypto"
 	"github.com/ethereum/go-ethereum/rlp"
+	"github.com/peteim/go-sdk/smcrypto/sm3"
 	"golang.org/x/crypto/sha3"
 )
 

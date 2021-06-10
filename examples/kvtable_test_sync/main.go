@@ -7,11 +7,11 @@ import (
 	"math/big"
 	"strings"
 
-	"github.com/FISCO-BCOS/go-sdk/abi"
-	"github.com/FISCO-BCOS/go-sdk/client"
-	"github.com/FISCO-BCOS/go-sdk/conf"
-	"github.com/FISCO-BCOS/go-sdk/core/types"
-	kvtable "github.com/FISCO-BCOS/go-sdk/examples" // import kvtabletest
+	"github.com/peteim/go-sdk/abi"
+	"github.com/peteim/go-sdk/client"
+	"github.com/peteim/go-sdk/conf"
+	"github.com/peteim/go-sdk/core/types"
+	kvtable "github.com/peteim/go-sdk/examples" // import kvtabletest
 )
 
 func main() {

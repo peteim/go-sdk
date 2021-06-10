@@ -3,8 +3,8 @@ package commandline
 import (
 	"fmt"
 
-	"github.com/FISCO-BCOS/go-sdk/precompiled/contractlifecycle"
 	"github.com/ethereum/go-ethereum/common"
+	"github.com/peteim/go-sdk/precompiled/contractlifecycle"
 
 	"github.com/spf13/cobra"
 )

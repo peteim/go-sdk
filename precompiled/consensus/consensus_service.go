@@ -5,11 +5,11 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/FISCO-BCOS/go-sdk/abi/bind"
-	"github.com/FISCO-BCOS/go-sdk/client"
-	"github.com/FISCO-BCOS/go-sdk/core/types"
-	"github.com/FISCO-BCOS/go-sdk/precompiled"
 	"github.com/ethereum/go-ethereum/common"
+	"github.com/peteim/go-sdk/abi/bind"
+	"github.com/peteim/go-sdk/client"
+	"github.com/peteim/go-sdk/core/types"
+	"github.com/peteim/go-sdk/precompiled"
 )
 
 // consensus precompiled contract error code

@@ -26,12 +26,12 @@ import (
 	"strings"
 	"time"
 
-	"github.com/FISCO-BCOS/go-sdk/conn"
-	"github.com/FISCO-BCOS/go-sdk/core/types"
 	"github.com/ethereum/go-ethereum"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/common/hexutil"
 	"github.com/ethereum/go-ethereum/rlp"
+	"github.com/peteim/go-sdk/conn"
+	"github.com/peteim/go-sdk/core/types"
 )
 
 // APIHandler defines typed wrappers for the FISCO BCOS RPC API.

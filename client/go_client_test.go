@@ -6,10 +6,10 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/FISCO-BCOS/go-sdk/abi"
-	"github.com/FISCO-BCOS/go-sdk/abi/bind"
-	"github.com/FISCO-BCOS/go-sdk/conf"
 	"github.com/ethereum/go-ethereum/common"
+	"github.com/peteim/go-sdk/abi"
+	"github.com/peteim/go-sdk/abi/bind"
+	"github.com/peteim/go-sdk/conf"
 )
 
 // HelloWorldABI is the input ABI used to generate the binding from.

@@ -26,7 +26,7 @@
 
 ```bash
 # 下载代码
-mkdir -p ~/go/src/github.com/FISCO-BCOS && cd ~/go/src/github.com/FISCO-BCOS && git clone https://github.com/FISCO-BCOS/go-sdk.git && cd go-sdk
+mkdir -p ~/go/src/github.com/FISCO-BCOS && cd ~/go/src/github.com/FISCO-BCOS && git clone https://github.com/peteim/go-sdk.git && cd go-sdk
 # 切换到develop分支
 git checkout -b develop origin/develop
 # 下载依赖
@@ -36,7 +36,7 @@ go mod download
 #### 第三步. 编译iOS SDK
 
 ```bash
-# 编译iOS SDK，当前目录~/go/src/github.com/FISCO-BCOS/go-sdk
+# 编译iOS SDK，当前目录~/go/src/github.com/peteim/go-sdk
 export CGO_LDFLAGS_ALLOW=".*"
 gomobile bind -target=ios -o FiscoBcosIosSdk.framework  --ldflags='-s -w' :./mobile/ios
 # 编译成功后，目录下会多了一个FiscoBcosIosSdk.framework目录
@@ -47,7 +47,7 @@ gomobile bind -target=ios -o FiscoBcosIosSdk.framework  --ldflags='-s -w' :./mob
 #### 第一步. 准备Solidity合约
 
 ```bash
-# 当前目录~/go/src/github.com/FISCO-BCOS/go-sdk
+# 当前目录~/go/src/github.com/peteim/go-sdk
 mkdir helloworld && cd helloworld
 # 将HelloWorld合约拷贝到目录下
 cp ../.ci/hello/HelloWorld.sol .
@@ -83,7 +83,7 @@ contract HelloWorld {
 #### 第二步. 编译合约
 
 ```bash
-# 当前目录~/go/src/github.com/FISCO-BCOS/go-sdk/helloworld
+# 当前目录~/go/src/github.com/peteim/go-sdk/helloworld
 # 下载编译器
 bash ../tools/download_solc.sh -v 0.4.25
 # 编译合约
@@ -94,7 +94,7 @@ bash ../tools/download_solc.sh -v 0.4.25
 #### 第三步. 生成Objective-c调用接口
 
 ```bash
-# 当前目录~/go/src/github.com/FISCO-BCOS/go-sdk/helloworld
+# 当前目录~/go/src/github.com/peteim/go-sdk/helloworld
 # 编译生成abigen工具
 go build ../cmd/abigen
 # 生成Objective-c合约
@@ -128,7 +128,7 @@ ls
 将合约和iOS SDK放入项目中
 
 ```bash
-# 当前位置 ~/go/src/github.com/FISCO-BCOS/go-sdk/helloworld
+# 当前位置 ~/go/src/github.com/peteim/go-sdk/helloworld
 # 请替换 ~/code 为您存放HelloWorld项目的正确目录
 cp -r HelloWorld.h HelloWorld.m ../FiscoBcosIosSdk.framework 你的项目路径/HelloWorld/HelloWorld/
 # 拷贝私钥文件

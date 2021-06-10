@@ -33,9 +33,9 @@ import (
 	"time"
 
 	tls "github.com/FISCO-BCOS/crypto/tls"
-	"github.com/FISCO-BCOS/go-sdk/core/types"
 	"github.com/ethereum/go-ethereum/crypto"
 	"github.com/google/uuid"
+	"github.com/peteim/go-sdk/core/types"
 	"golang.org/x/crypto/sha3"
 )
 

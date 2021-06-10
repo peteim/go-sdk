@@ -16,7 +16,7 @@
 
 package bind
 
-import "github.com/FISCO-BCOS/go-sdk/abi"
+import "github.com/peteim/go-sdk/abi"
 
 // tmplData is the data structure required to fill the binding template.
 type tmplData struct {
@@ -90,10 +90,10 @@ import (
 	"math/big"
 	"strings"
 
-	"github.com/FISCO-BCOS/go-sdk/abi"
-	"github.com/FISCO-BCOS/go-sdk/abi/bind"
-	"github.com/FISCO-BCOS/go-sdk/core/types"
-	"github.com/FISCO-BCOS/go-sdk/event"
+	"github.com/peteim/go-sdk/abi"
+	"github.com/peteim/go-sdk/abi/bind"
+	"github.com/peteim/go-sdk/core/types"
+	"github.com/peteim/go-sdk/event"
 	ethereum "github.com/ethereum/go-ethereum"
 	"github.com/ethereum/go-ethereum/common"
 )

@@ -23,11 +23,11 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/FISCO-BCOS/go-sdk/abi"
-	"github.com/FISCO-BCOS/go-sdk/core/types"
-	"github.com/FISCO-BCOS/go-sdk/event"
 	"github.com/ethereum/go-ethereum"
 	"github.com/ethereum/go-ethereum/common"
+	"github.com/peteim/go-sdk/abi"
+	"github.com/peteim/go-sdk/core/types"
+	"github.com/peteim/go-sdk/event"
 )
 
 // SignerFn is a signer function callback when a contract requires a method to

@@ -7,9 +7,9 @@ import (
 	"os"
 	"os/signal"
 
-	"github.com/FISCO-BCOS/go-sdk/client"
-	"github.com/FISCO-BCOS/go-sdk/conf"
 	"github.com/ethereum/go-ethereum/crypto"
+	"github.com/peteim/go-sdk/client"
+	"github.com/peteim/go-sdk/conf"
 )
 
 const (

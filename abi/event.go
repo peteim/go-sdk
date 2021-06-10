@@ -20,9 +20,9 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/FISCO-BCOS/go-sdk/smcrypto/sm3"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/crypto"
+	"github.com/peteim/go-sdk/smcrypto/sm3"
 )
 
 // Event is an event potentially triggered by the EVM's LOG mechanism. The Event

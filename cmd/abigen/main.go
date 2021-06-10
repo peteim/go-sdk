@@ -26,12 +26,12 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/FISCO-BCOS/go-sdk/abi"
-	"github.com/FISCO-BCOS/go-sdk/abi/bind"
 	"github.com/ethereum/go-ethereum/cmd/utils"
 	"github.com/ethereum/go-ethereum/common/compiler"
 	"github.com/ethereum/go-ethereum/crypto"
 	"github.com/ethereum/go-ethereum/log"
+	"github.com/peteim/go-sdk/abi"
+	"github.com/peteim/go-sdk/abi/bind"
 	"gopkg.in/urfave/cli.v1"
 )
 
@@ -129,7 +129,7 @@ func init() {
 
 func abigen(c *cli.Context) error {
 	utils.CheckExclusive(c, abiFlag, jsonFlag, solFlag, vyFlag) // Only one source can be selected.
-	if c.GlobalString(pkgFlag.Name) == "" && c.GlobalString(langFlag.Name) != "objc"{
+	if c.GlobalString(pkgFlag.Name) == "" && c.GlobalString(langFlag.Name) != "objc" {
 		utils.Fatalf("No destination package specified (--pkg)")
 	}
 	var lang bind.Lang

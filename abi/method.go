@@ -20,8 +20,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/FISCO-BCOS/go-sdk/smcrypto/sm3"
 	"github.com/ethereum/go-ethereum/crypto"
+	"github.com/peteim/go-sdk/smcrypto/sm3"
 )
 
 // Method represents a callable given a `Name` and whether the method is a constant.

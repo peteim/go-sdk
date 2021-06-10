@@ -21,9 +21,9 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/FISCO-BCOS/go-sdk/core/types"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/log"
+	"github.com/peteim/go-sdk/core/types"
 )
 
 // WaitMined waits for tx to be mined on the blockchain.

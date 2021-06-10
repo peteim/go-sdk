@@ -13,15 +13,15 @@ import (
 	"os"
 	"strings"
 
-	"github.com/FISCO-BCOS/go-sdk/abi"
-	"github.com/FISCO-BCOS/go-sdk/abi/bind"
-	"github.com/FISCO-BCOS/go-sdk/client"
-	"github.com/FISCO-BCOS/go-sdk/conf"
-	"github.com/FISCO-BCOS/go-sdk/core/types"
-	"github.com/FISCO-BCOS/go-sdk/event"
 	ethereum "github.com/ethereum/go-ethereum"
 	"github.com/ethereum/go-ethereum/common"
 	bn256 "github.com/ethereum/go-ethereum/crypto/bn256/cloudflare"
+	"github.com/peteim/go-sdk/abi"
+	"github.com/peteim/go-sdk/abi/bind"
+	"github.com/peteim/go-sdk/client"
+	"github.com/peteim/go-sdk/conf"
+	"github.com/peteim/go-sdk/core/types"
+	"github.com/peteim/go-sdk/event"
 )
 
 // Reference imports to suppress errors if they are not otherwise used.

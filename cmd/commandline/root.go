@@ -5,8 +5,8 @@ import (
 	"log"
 	"os"
 
-	"github.com/FISCO-BCOS/go-sdk/client"
-	"github.com/FISCO-BCOS/go-sdk/conf"
+	"github.com/peteim/go-sdk/client"
+	"github.com/peteim/go-sdk/conf"
 	"github.com/spf13/cobra"
 )
 
@@ -46,12 +46,12 @@ service and the contract operations(e.g. deploying && writing contracts).
 Also, console can be used as a Go package for FISCO BCOS that just simply adding
 the import statement:
 
-    import "github.com/FISCO-BCOS/go-sdk"
+    import "github.com/peteim/go-sdk"
 or
-    import "github.com/FISCO-BCOS/go-sdk/client" # using the client package
+    import "github.com/peteim/go-sdk/client" # using the client package
 
 Please access the github site for more details:
-	https://github.com/FISCO-BCOS/go-sdk.`,
+	https://github.com/peteim/go-sdk.`,
 	PersistentPreRun: func(cmd *cobra.Command, args []string) {
 		initConfig()
 	},

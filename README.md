@@ -5,11 +5,11 @@ Golang SDK For FISCO BCOS 2.2.0+
 [![CodeFactor](https://www.codefactor.io/repository/github/fisco-bcos/go-sdk/badge)](https://www.codefactor.io/repository/github/fisco-bcos/go-sdk)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/afbb696df3a8436a9e446d39251b2158)](https://www.codacy.com/gh/FISCO-BCOS/go-sdk?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=FISCO-BCOS/go-sdk&amp;utm_campaign=Badge_Grade)
 [![codecov](https://codecov.io/gh/FISCO-BCOS/go-sdk/branch/master/graph/badge.svg)](https://codecov.io/gh/FISCO-BCOS/go-sdk)
-[![Code Lines](https://tokei.rs/b1/github/FISCO-BCOS/go-sdk?category=code)](https://github.com/FISCO-BCOS/go-sdk)
-[![version](https://img.shields.io/github/tag/FISCO-BCOS/go-sdk.svg)](https://github.com/FISCO-BCOS/go-sdk/releases/latest)
+[![Code Lines](https://tokei.rs/b1/github/FISCO-BCOS/go-sdk?category=code)](https://github.com/peteim/go-sdk)
+[![version](https://img.shields.io/github/tag/FISCO-BCOS/go-sdk.svg)](https://github.com/peteim/go-sdk/releases/latest)
 
 
-![FISCO-BCOS Go-SDK GitHub Actions](https://github.com/FISCO-BCOS/go-sdk/workflows/FISCO-BCOS%20Go-SDK%20GitHub%20Actions/badge.svg)
+![FISCO-BCOS Go-SDK GitHub Actions](https://github.com/peteim/go-sdk/workflows/FISCO-BCOS%20Go-SDK%20GitHub%20Actions/badge.svg)
 [![Build Status](https://travis-ci.org/FISCO-BCOS/go-sdk.svg?branch=master)](https://travis-ci.org/FISCO-BCOS/go-sdk)
 
 ____
@@ -85,7 +85,7 @@ SMCrypto=false
 1. 拉取代码并编译
 
 ```bash
-git clone https://github.com/FISCO-BCOS/go-sdk.git
+git clone https://github.com/peteim/go-sdk.git
 cd go-sdk
 go build cmd/console.go
 ```
@@ -105,7 +105,7 @@ go build cmd/console.go
 以下的示例是通过`import`的方式来使用`go-sdk`，如引入RPC控制台库:
 
 ```go
-import "github.com/FISCO-BCOS/go-sdk/client"
+import "github.com/peteim/go-sdk/client"
 ```
 
 ## Solidity合约编译为Go文件
@@ -205,9 +205,9 @@ import (
     "fmt"
     "log"
 
-    "github.com/FISCO-BCOS/go-sdk/client"
-    "github.com/FISCO-BCOS/go-sdk/conf"
-    "github.com/FISCO-BCOS/go-sdk/store" // import store
+    "github.com/peteim/go-sdk/client"
+    "github.com/peteim/go-sdk/conf"
+    "github.com/peteim/go-sdk/store" // import store
 )
 
 func main(){

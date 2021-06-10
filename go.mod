@@ -1,4 +1,4 @@
-module github.com/FISCO-BCOS/go-sdk
+module github.com/peteim/go-sdk
 
 go 1.13
 

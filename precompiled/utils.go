@@ -5,8 +5,8 @@ import (
 	"math"
 	"math/big"
 
-	"github.com/FISCO-BCOS/go-sdk/core/types"
 	"github.com/ethereum/go-ethereum/common"
+	"github.com/peteim/go-sdk/core/types"
 )
 
 const (

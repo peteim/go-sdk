@@ -30,8 +30,8 @@ import (
 	"text/template"
 	"unicode"
 
-	"github.com/FISCO-BCOS/go-sdk/abi"
 	"github.com/ethereum/go-ethereum/log"
+	"github.com/peteim/go-sdk/abi"
 )
 
 // Lang is a target programming language selector to generate bindings for.
