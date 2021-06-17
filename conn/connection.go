@@ -267,6 +267,16 @@ func (c *Connection) Close() {
 	// }
 }
 
+func (c *Connection) IsClosed() bool {
+	hc := c.writeConn.(*channelSession)
+	select {
+	case <-hc.closed:
+		return true
+	default:
+		return false
+	}
+}
+
 // Call performs a JSON-RPC call with the given arguments and unmarshals into
 // result if no error occurred.
 //

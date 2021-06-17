@@ -136,6 +136,10 @@ func (c *Client) Close() {
 	c.apiHandler.Close()
 }
 
+func (c *Client) IsClosed() bool {
+	return c.apiHandler.IsClosed()
+}
+
 // ============================================== FISCO BCOS Blockchain Access ================================================
 
 // GetTransactOpts return *bind.TransactOpts

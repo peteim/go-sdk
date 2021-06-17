@@ -905,7 +905,6 @@ func (hc *channelSession) processAuthTopicMessage(msg *channelMessage) {
 }
 
 func (hc *channelSession) processMessages() {
-Loop:
 	for {
 		select {
 		case <-hc.closed:
@@ -932,7 +931,7 @@ Loop:
 			}
 			hc.asyncMu.Unlock()
 
-			break Loop
+			return
 		default:
 			receiveBuf := make([]byte, 4096)
 			b, err := hc.c.Read(receiveBuf)
