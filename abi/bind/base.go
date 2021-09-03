@@ -130,6 +130,10 @@ func deploy(opts *TransactOpts, abi abi.ABI, bytecode []byte, backend ContractBa
 	return tx, receipt, c, nil
 }
 
+func (c *BoundContract) GetABI() abi.ABI {
+	return c.abi
+}
+
 func AsyncDeployContract(opts *TransactOpts, handler func(*types.Receipt, error), abi abi.ABI, bytecode []byte, backend ContractBackend, params ...interface{}) (*types.Transaction, error) {
 	// Otherwise try to deploy the contract
 	c := NewBoundContract(common.Address{}, abi, backend, backend, backend)
